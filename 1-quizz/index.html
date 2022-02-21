@@ -25,54 +25,101 @@
 5- Afficher les phrases en fonction des résultats
 6- Changer la couleur des blocs + animation en fonction des réusltas -->
 
-<div class="section-globale">
-    <h1>Quizz Culture générale</h1>
-    <div class="container-questions">
+<h1>Quizz Culture Générale !</h1>
+<div class="container-global">
+<form class="form-quizz"> 
+    <div class="question-block">
+        <h4>Qui est l'empereur de France le 2 décembre 1804 ?</h4>
+        <div>
+            <input type="radio" id="Clovis" name="q1" value="a" checked>
+            <label for="Clovis">Clovis</label>
+        </div>
+        <div>
+            <input type="radio" id="Lincoln" name="q2" value="b" checked>
+            <label for="Lincoln">Lincoln</label>
+        </div>
+        <div>
+            <input type="radio" id="Bonaparte" name="q3" value="c" checked>
+            <label for="Bonaparte">Napoléon Bonaparte</label>
+        </div>
 
-        <!-- question I -->
-        <div class="container-question container-question-1">
-            <h4 class="titre-question titre-question1">Question1</h4>
-            <div class="input">
-                <input type="radio" id="answer-I-1" value="réponse1" name="answer-I-1"> <label for="answer-I-1">réponse1</label>
-            </div>
-            <div class="input">
-                <input type="radio" id="answer-I-2" value="réponse2" name="answer-I-1"> <label for="answer-I-2">réponse2</label>
-            </div>
-            <div class="input">
-                <input type="radio" id="answer-I-3" value="réponse3" name="answer-I-1"> <label for="answer-I-3">réponse3</label>
-            </div>
-        </div>
-        
-        
-        <!-- question II -->
-        <div class="container-question container-question-2">
-            <h4 class="titre-question titre-question2">Question2</h4>
-            <div class="input">
-                <input type="radio" id="answer-II-1" value="réponse1" name="answer-II-1"> <label for="answer-II-1">réponse1</label>
-            </div>
-            <div class="input">
-                <input type="radio" id="answer-II-2" value="réponse2" name="answer-II-1"> <label for="answer-II-2">réponse2</label>
-            </div>
-            <div class="input">
-                <input type="radio" id="answer-II-3" value="réponse3" name="answer-II-1"> <label for="answer-II-3">réponse3</label>
-            </div>
-        </div>
-        
-        <!-- question III -->
-
-        <div class="container-question container-question-3">
-            <h4 class="titre-question titre-question3">Question3</h4>
-            <div class="input">
-                <input type="radio" id="answer-III-1" value="réponse1" name="answer-III-1"> <label for="answer-III-1">réponse1</label>
-            </div>
-            <div class="input">
-                <input type="radio" id="answer-III-2" value="réponse2" name="answer-III-1"> <label for="answer-III-2">réponse2</label>
-            </div>
-            <div class="input">
-                <input type="radio" id="answer-III-3" value="réponse3" name="answer-III-1"> <label for="answer-III-3">réponse3</label>
-            </div>
-        </div>
     </div>
+
+    <div class="question-block">
+        <h4>Quelle est la date d'independance des Etats-unis ?</h4>
+        <div>
+            <input type="radio" id="date1" name="q1" value="a" checked>
+            <label for="date1"> 4 juillet 1776</label>
+        </div>
+        <div>
+            <input type="radio" id="date2" name="q2" value="b" checked>
+            <label for="date2">4 juillet 1856</label>
+        </div>
+        <div>
+            <input type="radio" id="date3" name="q3" value="c" checked>
+            <label for="date3">4 juillet 1925</label>
+        </div>
+
+    </div>
+
+    <div class="question-block">
+        <h4>La chute de l'empereur Romain se situe en ?</h4>
+        <div>
+            <input type="radio" id="date4" name="q1" value="a" checked>
+            <label for="date4">35 ap. JC</label>
+        </div>
+        <div>
+            <input type="radio" id="date5" name="q2" value="b" checked>
+            <label for="date5">395 ap.JC</label>
+        </div>
+        <div>
+            <input type="radio" id="date6" name="q3" value="c" checked>
+            <label for="date6">740 AV. JC </label>
+        </div>
+
+    </div>
+
+    <div class="question-block">
+        <h4>Quelle est la capitale de la Slovénie?</h4>
+        <div>
+            <input type="radio" id="Ljubjana" name="q1" value="a" checked>
+            <label for="Ljubjana">Ljubjana</label>
+        </div>
+        <div>
+            <input type="radio" id="Belgrade" name="q2" value="b" checked>
+            <label for="Belgrade">Belgrade</label>
+        </div>
+        <div>
+            <input type="radio" id="Bratislava" name="q3" value="c" checked>
+            <label for="Bratislava">Bratislava</label>
+        </div>
+
+    </div>
+
+    <div class="question-block">
+        <h4>Combien d'habitants compte l'irlande en 2020 ?</h4>
+        <div>
+            <input type="radio" id="m1" name="q1" value="a" checked>
+            <label for="m1">1,365 millions</label>
+        </div>
+        <div>
+            <input type="radio" id="m2" name="q2" value="b" checked>
+            <label for="m2">21 millions</label>
+        </div>
+        <div>
+            <input type="radio" id="m3" name="q3" value="c" checked>
+            <label for="m3">4,9 millions</label>
+        </div>
+
+    </div>
+
+<button type="submit">Validez vos choix !</button>    
+</form>
+<div class="resultats">
+    <h2> cliquez sur validez pour vois les résultats</h2>
+    <p class="aide"></p>
+    <p class="note"></p>
+</div>
 </div>
 
     <script src="app.js"></script>
